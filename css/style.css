@@ -60,10 +60,18 @@ p {
     margin-bottom: 10px;
 }
 
-h1,h2,h3 {
+h1,h2 {
     font-family: 'Belgrano', serif;
     line-height: 1.4em;
     color: #222222;
+    margin: 10px 0;
+}
+
+
+h3 {
+    font-family: 'Belgrano', serif;
+    line-height: 1.4em;
+    color: #26B7CD;
     margin: 10px 0;
 }
 
