@@ -60,20 +60,11 @@ p {
     margin-bottom: 10px;
 }
 
-h1,h2 {
+h1,h2,h3 {
     font-family: 'Belgrano', serif;
     line-height: 1.4em;
     color: #222222;
     margin: 10px 0;
-    
-}
-
-h3 {
-    font-family: 'Belgrano', serif;
-    line-height: 1.4em;
-    color: #26B7CD;
-    margin: 10px 0;
-    
 }
 
 h4,h5 {
@@ -112,8 +103,8 @@ blockquote {
 }
 
 ul,ol {
-	font-size: 1.2rem;
-	line-height: 1.0em;
+	font-size: 1.6rem;
+	line-height: 1.6em;
 	padding: 0 0 0 2rem;
 	margin: 1rem 0;
 }
@@ -356,9 +347,9 @@ Navigation =========*/
 .nav a:hover {
 	background: #efefef;
 	transition: all 0.1s;
--	-moz-transition: all 0.1s;
--	-webkit-transition: all 0.1s;
--	-o-transition: all 0.1s; 
+	-moz-transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s; 
 }
 
 .navbar-nav {
@@ -461,6 +452,14 @@ Home ===============*/
 
 .home-background img {
 	width: 100%;
+}
+
+
+
+/*--------------------
+Map ===============*/
+#map_canvas {
+	height: 520px;
 }
 
 
