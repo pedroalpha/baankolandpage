@@ -89,18 +89,42 @@
 					<div class="col-md-5 col-sm-12">
 						
 
-<form action="/your-charge-code" method="POST">
-<script
-  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-  data-key="pk_test_z7kUT2VKDKOVNXYbkfDQ6qz4"
-  data-amount="2000"
-  data-name="Baanko"
-  data-description="2 widgets"
-  data-image="/img/documentation/checkout/marketplace.png"
-  data-locale="auto">
-</script>
-</form>
+//pagamento
 
+<center>
+<script src="https://checkout.stripe.com/checkout.js"></script>
+
+<button id="customButton">Pagamento</button>
+
+<script>
+var handler = StripeCheckout.configure({
+  key: 'pk_test_z7kUT2VKDKOVNXYbkfDQ6qz4',
+  image: 'images/logo2.png',
+  locale: 'auto',
+  token: function(token) {
+    // You can access the token ID with `token.id`.
+    // Get the token ID to your server-side code for use.
+  }
+});
+
+$('#customButton').on('click', function(e) {
+  // Open Checkout with further options:
+  handler.open({
+    name: 'Baanko',
+    description: '2 widgets',
+    amount: 3000
+  });
+  e.preventDefault();
+});
+
+// Close Checkout on page navigation:
+$(window).on('popstate', function() {
+  handler.close();
+});
+</script> 
+
+
+</center>
 
 
 				<!--===============================-->
