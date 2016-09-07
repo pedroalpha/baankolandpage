@@ -86,18 +86,14 @@
 <center>
 
 
-<form action="/your-charge-code" method="POST">
-<script
-  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-  data-key="pk_test_z7kUT2VKDKOVNXYbkfDQ6qz4"
-  data-amount="2000"
-  data-name="Pedro Aguiar"
-  data-description="2 widgets"
-  data-image="/img/documentation/checkout/marketplace.png"
-  data-locale="auto">
-</script>
+<form method="POST" action="/comprar">
+    <script type="text/javascript"
+        src="https://assets.pagar.me/checkout/checkout.js"
+        data-button-text="Pagar"
+        data-encryption-key="ek_test_Ec8KhxISQ1tug1b8bCGxC2nXfxqRmk"
+        data-amount="1000">
+    </script>
 </form>
-
 </center>
 
 
